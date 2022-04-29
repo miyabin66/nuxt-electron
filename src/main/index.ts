@@ -33,6 +33,8 @@ const newWin = () => {
     width: 1400,
     height: 1000,
     webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: false,
       preload: path.resolve(path.join(__dirname, 'preload.js')),
     },
   })
