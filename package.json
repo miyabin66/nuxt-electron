@@ -17,9 +17,9 @@
     "build:mac": "npm-run-all build -- --mac",
     "build:linux": "npm-run-all build -- --linux",
     "lint": "npm-run-all lint:js lint:style lint:prettier",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint:prettier": "prettier --check . --ignore-path .gitignore",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
+    "lint:prettier": "prettier --write --check .",
     "clean": "npm-run-all clean:build clean:dist",
     "clean:build": "rimraf build/*",
     "clean:dist": "rimraf dist/*"

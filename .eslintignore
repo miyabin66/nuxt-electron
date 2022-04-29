@@ -93,3 +93,5 @@ sw.*
 .vscode/
 
 types/*.ts
+
+build
