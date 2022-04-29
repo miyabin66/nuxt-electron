@@ -1,5 +1,3 @@
-
-
 import nuxtConfig from '../renderer/nuxt.config'
 const http = require('http')
 const path = require('path')
