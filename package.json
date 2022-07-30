@@ -7,7 +7,7 @@
     "dev": "npm-run-all -p dev:main dev:electron",
     "dev:main": "cross-env NODE_ENV=development tsc -p src/main/tsconfig.json",
     "dev:electron": "cross-env NODE_ENV=development electron .",
-    "dev:renderer": "cross-env NODE_ENV=development nuxt src/renderer",
+    "nuxt": "cross-env NODE_ENV=development nuxt src/renderer",
     "build": "npm-run-all build:main build:renderer build:electron -- {@}",
     "build:main": "cross-env NODE_ENV=production tsc -p src/main/tsconfig.json",
     "build:renderer": "cross-env NODE_ENV=production nuxt generate src/renderer",
