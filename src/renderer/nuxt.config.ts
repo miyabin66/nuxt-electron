@@ -159,7 +159,7 @@ export default {
 
   router: {
     mode: 'hash',
-    base: './'
+    base: '/'
   },
 
   target: 'static',
